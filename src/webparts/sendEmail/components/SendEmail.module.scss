@@ -1,0 +1,114 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss'; 
+
+.sendEmail {
+  .container {
+    max-width: 1000px;
+    margin: 0px auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.753), 0 30px 70px 0 rgba(0, 0, 1, 0.1);
+  }
+
+  .row {
+    @include ms-Grid-row;
+    @include ms-fontColor-white;
+    //background-color: "[theme: themeDark, default: #005a9e]";
+    background-color: "[theme: themePrimary, default: #0078d7]";
+    padding: 20px;
+  }
+
+  .subject {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+  .message {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+  .inputFileWrapper{
+    @include ms-font-l;
+    @include ms-fontColor-white;
+    font-family: "Segoe UI WestEuropean","Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  }
+  .inputFile{
+    font-size:smaller!important;
+    @include ms-font-l;
+    @include ms-fontColor-white;
+    font-family: "Segoe UI WestEuropean","Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  }
+  .uploadedFile1{
+    @include ms-font-l;
+    @include ms-fontColor-white;
+    font-family: "Segoe UI WestEuropean","Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  }
+  .uploadedFile2{
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+  .uploadedFile{
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .column {
+    @include ms-Grid-col;
+    @include ms-lg10;
+    @include ms-xl8;
+    @include ms-xlPush2;
+    @include ms-lgPush1;
+  }
+
+  .title {
+    @include ms-font-xl;
+    @include ms-fontColor-white;
+  }
+
+  .subTitle {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .description {
+    @include ms-font-l;
+    @include ms-fontColor-white;
+  }
+
+  .button {
+    // Our button
+    text-decoration: none;
+    height: 32px;
+    background-color: "[theme: themePrimary, default: #0078d7]";
+
+    // Primary Button
+    min-width: 80px;
+    background-color: $ms-color-themePrimary;
+    border-color: $ms-color-themePrimary;
+    color: $ms-color-white;
+
+    // Basic Button
+    outline: transparent;
+    position: relative;
+    font-family: "Segoe UI WestEuropean","Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: $ms-font-size-m;
+    font-weight: $ms-font-weight-regular;
+    border-width: 0;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 16px;
+
+    .label {
+      font-weight: $ms-font-weight-semibold;
+      font-size: $ms-font-size-m;
+      height: 40px;
+      line-height: 32px;
+      margin: 0 4px;
+      vertical-align: top;
+      display: inline-block;
+    }
+  }
+  .label {
+    color: $ms-color-white;
+  }
+}
+

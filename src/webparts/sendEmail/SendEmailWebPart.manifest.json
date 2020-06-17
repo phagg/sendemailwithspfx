@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "d0effb15-4fc9-48ce-8380-ab06d1fb6593",
+  "alias": "SendEmailWebPart",
+  "componentType": "WebPart",
+
+
+  "version": "*",
+  "manifestVersion": 2,
+
+ 
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart"],
+
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70", 
+    "group": { "default": "Other" },
+    "title": { "default": "Send Email" },
+    "description": { "default": "Send email from SPFx webpart" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "description": "Send Email"
+    }
+  }]
+}
